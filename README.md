@@ -65,7 +65,6 @@ com.auth0samples://YOUR_DOMAIN/android/com.auth0samples/callback
 
 Run your app on an emulator, simulator, or your own connected device.
 
-- To run the app on iOS run `expo run:ios`.
-- To run the app on Android run `expo run:android`.
+- To run the app on Android run `npx expo run:android`.
 
 The first run may take a while to fully launch. Keep an eye out for confirmation windows and watch the terminal for output and results.

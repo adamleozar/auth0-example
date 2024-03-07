@@ -9,8 +9,12 @@ const Home = () => {
   const onLogin = async () => {
     try {
       authorizeResult = await authorize(
-        {},
-        { customScheme: 'com.auth0samples' }
+        { 
+          scope: 'openid email profile offline_access',
+        },
+        {
+          customScheme: 'com.auth0samples',
+        }
       );
       console.log(authorizeResult);
     } catch (e) {
@@ -24,7 +28,9 @@ const Home = () => {
     try {
       await clearSession(
         {},
-        { customScheme: 'com.auth0samples' }
+        {
+          customScheme: 'com.auth0samples'
+        }
       );
     } catch (e) {
       console.log('Log out cancelled');
